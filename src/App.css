@@ -1,0 +1,141 @@
+.chef-clude-page-container{
+    background-color: #FAFAF8;
+    min-height: 100vh;
+}
+
+.header-title{
+    font-weight: 450;
+    font-size: 18px;
+}
+
+.header-img{
+    width: 43px;
+}
+
+.chef-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 16px;
+    background-color: #ffffff;
+    border-bottom: 1px solid rgba(220, 220, 220, 0.532);
+    box-shadow: 1px 1px 10px rgba(220, 220, 220, 0.511);
+}
+
+.ingredient-input-container{
+    background-color: #FAFAF8;
+    margin-top: 60px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+.ingredient-input-container>input{
+    font-family: "Inter", sans-serif;
+    background-color: #ffffff;
+    padding: 10.5px;
+    border: 1px solid gainsboro;
+    width: 42%;
+    border-radius: 5px;
+}
+
+.ingredient-input-container>button{
+    background-color: black;
+    color: #ffffff;
+    padding: 9px 10px;
+    width: 150px;
+    border-radius: 5px;
+    font-size: 12px;
+    font-family: "Inter", sans-serif;
+    border: none;
+}
+
+.generateRecipeContainer{
+    background-color: #F0EFEB;
+    width: 50%;
+    border-radius: 7px;
+    padding: 33px 45px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 46.5px;
+    position: relative;
+}
+
+.generateRecipeContainer h4{
+    font-weight: 550;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.generateRecipeContainer p{
+    font-size: 13px;
+    color: gray;
+    margin-top: 4px;
+    margin-bottom: 0;
+}
+
+.generateRecipeContainer button{
+    background-color: #D17557;
+    color: #ffffff;
+    padding: 12px 12px;
+    border-radius: 5px;
+    font-size: 12px;
+    font-family: "Inter", sans-serif;
+    border: none;
+}
+
+.ingredient-list-title{
+    font-family: "Inter", sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    margin-top: 0;
+}
+
+.ingredient-list-container{
+    width: 56%;
+    /* background-color: #D17557; */
+    margin-bottom: 35px;
+}
+
+.ingredient-list-container li{
+    color: #475467;
+    margin-bottom: 12px;
+    font-size: 17px;
+}
+
+.ingredient-list-container li::checkmark{
+    color: #475467;
+}
+
+.recipeViewContainer{
+    width: 57%;
+    color: #475467;
+    font-size: 14px;
+    letter-spacing: 1px;
+    line-height: 1.8;
+    /* background-color: aliceblue; */
+    margin-bottom: 60px;
+}
+
+.spinner {
+  width: 20px;
+  height: 20px;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  border-top-color: #222;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  /* margin: 20px auto; */
+  position: absolute;
+  right: 60px;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
