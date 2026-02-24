@@ -1,92 +1,82 @@
-# Chef Claude 🍳 | AI-Driven Recipe Generator
+# Chef Claude: AI-Powered Culinary Intelligence
 
-**Chef Claude** is a modern, intelligent web application that helps you transform a handful of ingredients into a delicious recipe. Powered by state-of-the-art AI (Mistral 7B & Claude 3), it takes the guesswork out of cooking by suggesting creative meals based on what you already have in your pantry.
+Chef Claude is a sophisticated web application designed to bridge the gap between available household ingredients and high-quality culinary creation. By leveraging advanced large language models (LLMs), the platform provides an intuitive interface for users to generate detailed, structured recipes based on specific inventory constraints.
 
----
+## Project Overview
 
-## 📸 Project Screenshots
+The core objective of Chef Claude is to minimize food waste and enhance home cooking through intelligent automation. The system utilizes a multi-model approach, integrating specialized AI SDKs to process natural language inputs and return precisely formatted markdown recipes. This ensures that users receive not just a list of instructions, but a professional culinary guide tailored to their immediate needs.
 
-<div align="center">
-  <h3>Landing & Interaction</h3>
-  <img src="src/assets/project_screenshots/Screenshot (1227).png" width="45%" alt="Landing Page" />
-  <img src="src/assets/project_screenshots/Screenshot (1228).png" width="45%" alt="Ingredient Input" />
-  <br />
-  <img src="src/assets/project_screenshots/Screenshot (1229).png" width="45%" alt="Ingredient List" />
-  <img src="src/assets/project_screenshots/Screenshot (1230).png" width="45%" alt="Recipe Generation" />
-  <br />
-  <h3>AI Generated Results</h3>
-  <img src="src/assets/project_screenshots/Screenshot (1231).png" width="45%" alt="Recipe Result 1" />
-  <img src="src/assets/project_screenshots/Screenshot (1232).png" width="45%" alt="Recipe Result 2" />
-</div>
+## Visual Documentation
 
----
+### Application Interface
+The primary workspace provides a clean, minimalist environment for ingredient management and recipe generation.
 
-## ✨ Features
+![Application Dashboard](src/assets/project_screenshots/Screenshot%20(1227).png)
 
-- 🧠 **AI Intelligence:** Integrated with **Anthropic (Claude 3 Haiku)** and **Hugging Face (Mistral 7B Instruct)** to generate high-quality, diverse recipes.
-- 📝 **Markdown Rendering:** Beautifully formatted recipes with clear instructions, ingredients, and titles.
-- ⚡ **Real-time Interaction:** Fast and responsive ingredient entry system.
-- 🎨 **Modern UI/UX:** Built with a focus on clean aesthetics, featuring smooth transitions and a premium feel.
-- 📱 **Fully Responsive:** Works perfectly on desktops, tablets, and mobile devices.
-- ⏳ **Loading states:** Visual feedback while the AI "cooks up" your recipe.
-- 📜 **Auto-Scroll:** Automatically scrolls to show you the generated recipe once it's ready.
+### Ingredient Management
+Users can rapidly inventory their available items through a streamlined input system engineered for efficiency.
 
----
+![Ingredient Input Interface](src/assets/project_screenshots/Screenshot%20(1228).png)
 
-## 🛠️ Tech Stack
+### Dynamic Inventory Tracking
+The application maintains a real-time list of added ingredients, allowing for quick review before committing to the generation process.
 
-- **Framework:** [React 19](https://reactjs.org/)
-- **Build Tool:** [Vite](https://vitejs.dev/)
-- **AI Models:** 
-  - [Mistral 7B](https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.2) via Hugging Face Inference
-  - [Claude 3 Haiku](https://www.anthropic.com/claude) via Anthropic SDK
-- **Styling:** Custom CSS & [Bootstrap 5](https://getbootstrap.com/)
-- **Markdown:** [react-markdown](https://github.com/remarkjs/react-markdown) for elegant recipe display.
-- **Routing:** [React Router 7](https://reactrouter.com/)
+![Inventory Tracking](src/assets/project_screenshots/Screenshot%20(1229).png)
 
----
+### Automated Recipe Synthesis
+Once the inventory requirements are met, the underlying AI engine synthesizes a unique recipe, optimizing for the provided ingredients.
 
-## 🚀 Getting Started
+![Generation Process](src/assets/project_screenshots/Screenshot%20(1230).png)
 
-Follow these steps to set up the project locally:
+### Structural Output Analysis
+The resulting output is rendered with high fidelity, providing clear hierarchy, preparation steps, and serving suggestions.
 
-### 1. Clone the repository
-```bash
-git clone https://github.com/thenurinethangi/Chef-Claude-React.git
-cd react-project-two
-```
+![Recipe Output Analysis 1](src/assets/project_screenshots/Screenshot%20(1231).png)
 
-### 2. Install dependencies
-```bash
-npm install
-```
+### Intelligent Variation
+The system is designed to provide diverse culinary perspectives, ensuring that subsequent requests for the same ingredients yield different results.
 
-### 3. Environment Setup
-Create a `.env` file in the root directory and add your API keys:
-```env
-VITE_ANTHROPIC_API_KEY=your_anthropic_api_key_here
-VITE_HF_TOKEN=your_huggingface_token_here
-```
+![Recipe Output Analysis 2](src/assets/project_screenshots/Screenshot%20(1232).png)
 
-### 4. Run the development server
-```bash
-npm run dev
-```
+## Technical Architecture
 
----
+### Core Technologies
+*   **Frontend Framework:** React 19 (utilizing functional components and modern Hooks API)
+*   **Build Optimization:** Vite
+*   **State Management:** Reactive state handling for inventory and asynchronous data fetching
+*   **Typography & Styling:** Context-aware CSS with Bootstrap 5 integration
 
-## 💡 How it Works
+### Artificial Intelligence Integration
+*   **Mistral AI:** Utilized via Hugging Face Inference for robust instruction-following and recipe logic.
+*   **Claude 3 (Anthropic):** Implementation support for high-fidelity natural language processing.
+*   **Markdown Processing:** `react-markdown` integration for semantic rendering of AI-generated content.
 
-1. **Input Ingredients:** Add at least 4 ingredients to the list.
-2. **Generate:** Click on the "Get a Recipe" button.
-3. **Enjoy:** The AI analyzes your ingredients and provides a step-by-step markdown-formatted recipe.
+## Implementation Details
 
----
+The application architecture follows a modular component-based design, ensuring separation of concerns between UI rendering, state logic, and API communication. The AI integration layer is abstracted to handle asynchronous requests efficiently, featuring smooth transitions and auto-scroll functionality for enhanced user experience.
 
-## 📄 License
+## Deployment and Setup
 
-This project is open-source and available under the [MIT License](LICENSE).
+### Prerequisites
+*   Node.js (LTS version recommended)
+*   NPM or Yarn package manager
 
----
-
-<p align="center">Made with ❤️ by Nurine Thangi</p>
+### Installation
+1.  Clone the repository:
+    ```bash
+    git clone https://github.com/thenurinethangi/Chef-Claude-React.git
+    ```
+2.  Install dependencies:
+    ```bash
+    npm install
+    ```
+3.  Configure Environment Variables:
+    Create a `.env` file in the root directory:
+    ```env
+    VITE_ANTHROPIC_API_KEY=your_api_key
+    VITE_HF_TOKEN=your_api_token
+    ```
+4.  Execute Development Build:
+    ```bash
+    npm run dev
+    ```
